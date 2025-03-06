@@ -10,10 +10,10 @@
     </style>
 </head>
 <body>
-    <!-- Three.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
-    <!-- GLTFLoader (necesario para cargar modelos 3D) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/loaders/GLTFLoader.min.js"></script>
+    <!-- Three.js (versión r154) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r154/three.min.js"></script>
+    <!-- GLTFLoader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r154/loaders/GLTFLoader.min.js"></script>
     
     <script>
         // Escena, cámara y renderizador
@@ -31,7 +31,7 @@
         // Cargar el modelo 3D
         const loader = new THREE.GLTFLoader();
         loader.load(
-            'k.glb', // Asegúrate de que el archivo exista en la misma carpeta
+            'k.glb', // Asegúrate de que el archivo exista
             (gltf) => {
                 const model = gltf.scene;
                 scene.add(model);
